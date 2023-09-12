@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Grid </title>
+        <style>
+            .main-container{
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+            }
+            .inner-div{
+                border: solid 1px skyblue;
+                background-color: antiquewhite;
+            }
+
+            .grid-item1{
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 3;
+            }
+            .grid-item5{
+                grid-column-start: 3;
+                grid-column-end: 4;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- grid -->
+        <div class="main-container">
+            <div class="inner-div grid-item1">HTML</div>
+            <div class="inner-div grid-item2">CSS</div>
+            <div class="inner-div grid-item3">bootstrap</div>
+            <div class="inner-div grid-item4">hello</div>
+            <div class="inner-div grid-item5">bye</div>
+            
+        </div>
+        
+    </body>
+</html>

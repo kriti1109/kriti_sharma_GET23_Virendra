@@ -1,0 +1,27 @@
+/* Assignment */
+
+:root{
+    --evencolor: orange;
+    --firstletter: blue;
+}
+
+div > p::first-letter{
+    color: var(--firstletter);
+}
+
+div p::before{
+    content: "Welcome, ";
+}
+
+.even::first-letter{
+    color: var(--evencolor);
+}
+
+body > p::after{
+    content: " Bye.";
+}
+
+div p::first-line{
+    font-size: 20px;
+}
+
